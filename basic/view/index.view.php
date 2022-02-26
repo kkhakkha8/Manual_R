@@ -10,9 +10,17 @@
     <?= $greeting ?>
     <h1 style="background-color: grey;text-align:center;"><?= "Hello ". $greeting ?></h1>
     <ul>
-        <?php foreach ($aungaung as $name) : ?>
-            <li><?= $name?></li>
-        <?php endforeach ; ?>
+        <li>Task title is <?= $tasks['title'];?></li>
+        <li>Due date is <?= $tasks['due'];?></li>
+        <strike><li>
+        <?php 
+
+            echo $tasks['complete'] ?  "complete"  : "incomplete" ;        
+
+        ?>
+        </li></strike>
+        
+        
     </ul>
 </body>
 </html>

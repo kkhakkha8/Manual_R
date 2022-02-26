@@ -16,6 +16,12 @@ $aungaung = [
     "hair"=>"black"
     ];
 
+    $tasks = [
+        'title'=>'finished homework',
+        'due'=>'today',
+        'complete'=>false
+    ];
+
 require "view/index.view.php";
 
 
