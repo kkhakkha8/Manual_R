@@ -1,5 +1,5 @@
 <?php 
-
+require 'function.php';
 
 
 $greeting = "hello world greeting";
