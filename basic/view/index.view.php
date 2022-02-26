@@ -10,15 +10,15 @@
     <?= $greeting ?>
     <h1 style="background-color: grey;text-align:center;"><?= "Hello ". $greeting ?></h1>
     <ul>
-        <li>Task title is <?= $tasks['title'];?></li>
-        <li>Due date is <?= $tasks['due'];?></li>
-        <strike><li>
-        <?php 
-
-            echo $tasks['complete'] ?  "complete"  : "incomplete" ;        
-
-        ?>
-        </li></strike>
+        <li>His name is <?= $personBio['name'];?></li>
+        <li>His age is <?= $personBio['age'];?></li>
+        <li>He is 
+        <?php  if($personBio['isMarried']) : ?>
+            Married
+        <?php else :?>
+            not Married
+        <?php endif ;?>
+        </li>
         
         
     </ul>

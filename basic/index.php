@@ -22,6 +22,11 @@ $aungaung = [
         'complete'=>false
     ];
 
+    $personBio = [
+        "name"=>"kyawkyaw",
+        "age"=>22,
+        "isMarried"=>false,  
+    ];
 require "view/index.view.php";
 
 
