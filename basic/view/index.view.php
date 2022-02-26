@@ -10,7 +10,7 @@
     <?= $greeting ?>
     <h1 style="background-color: grey;text-align:center;"><?= "Hello ". $greeting ?></h1>
     <ul>
-        <?php foreach ($names as $name) : ?>
+        <?php foreach ($aungaung as $name) : ?>
             <li><?= $name?></li>
         <?php endforeach ; ?>
     </ul>

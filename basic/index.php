@@ -10,6 +10,12 @@ $names = [
     "Mg Mg"
 ];
 
+$aungaung = [
+    "name"=>'aungaung',
+    "age"=>22,
+    "hair"=>"black"
+    ];
+
 require "view/index.view.php";
 
 
