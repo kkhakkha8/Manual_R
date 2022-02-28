@@ -4,9 +4,10 @@ require "bootstrap.php";
 //$pdo = DB_Connection::make();
 
 
-$tasksTableData = $query->fetchFromTable('tasks');
+$tasksTableDatas = $query->fetchFromTable('tasks');
 
-
+// $userTableDatas = $query->fetchFromTable('users');
+// dd($userTableDatas);
 
 require "view/index.view.php";
 

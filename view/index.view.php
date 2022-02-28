@@ -8,7 +8,7 @@
 </head>
 <body>
         <h1>My Todos</h1>
-      <?php foreach($fetchData as $data) : ?>
+      <?php foreach($tasksTableDatas as $data) : ?>
             <ul>
             <?php if ($data->complete) : ?>
                 <li><strike><h2><?=$data->description?></h2></strike></li>
