@@ -7,20 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <?= $greeting ?>
-    <h1 style="background-color: grey;text-align:center;"><?= "Hello ". $greeting ?></h1>
-    <ul>
-        <li>His name is <?= $personBio['name'];?></li>
-        <li>His age is <?= $personBio['age'];?></li>
-        <li>He is 
-        <?php  if($personBio['isMarried']) : ?>
-            Married
-        <?php else :?>
-            not Married
-        <?php endif ;?>
-        </li>
-        
-        
-    </ul>
+        <h1>My Todos</h1>
+      <?php foreach($fetchData as $data) : ?>
+            <ul>
+            <?php if ($data->complete) : ?>
+                <li><strike><h2><?=$data->description?></h2></strike></li>
+            <?php else : ?>
+                <li><h2><?= $data->description?> </h2></li>
+            <?php endif ;?>        
+            </ul>
+      <?php endforeach ; ?>
+
 </body>
 </html>
